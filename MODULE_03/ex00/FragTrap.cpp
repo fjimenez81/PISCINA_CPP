@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 15:29:31 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 15:52:15 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 12:21:02 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ FragTrap::FragTrap(void)
 	_melee_atk = 30;
 	_ranged_atk = 20;
 	_dmg_reduc = 5;
-	_name = "INAC";
+	_name = "KUBO";
 }
 
 FragTrap::FragTrap(std::string const & name)

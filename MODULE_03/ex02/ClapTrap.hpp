@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:38:35 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:39:02 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 13:29:25 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 
 # include <iostream>
 
-class ClapTrap {
+class ClapTrap
+{
     public:
+
         ClapTrap(void);
         ClapTrap(int hp, int max_hp, int nrg, int max_nrg, int lvl,
                     int melee_atk, int ranged_atk, int dmg_reduc,
@@ -30,7 +32,9 @@ class ClapTrap {
         void	meleeAttack(std::string const & target);
         void	takeDamage(unsigned int amount);
         void	beRepaired(unsigned int amount);
+        
     protected:
+
         int			_hp;
         int			_max_hp;
         int			_nrg;

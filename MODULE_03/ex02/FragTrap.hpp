@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:36:11 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:36:14 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 13:33:50 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,18 @@
 # include <iostream>
 # include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap {
-public:
-	FragTrap(void);
-	FragTrap(std::string const & name);
-	FragTrap(const FragTrap & src);
-	~FragTrap(void);
+class FragTrap : public ClapTrap
+{
+	public:
+	
+		FragTrap(void);
+		FragTrap(std::string const & name);
+		FragTrap(const FragTrap & src);
+		~FragTrap(void);
 
-	FragTrap & operator=(const FragTrap & src);
+		FragTrap & operator=(const FragTrap & src);
 
-	void	vaulthunter_dot_exe(std::string const & target);
+		void	vaulthunter_dot_exe(std::string const & target);
 };
 
 #endif

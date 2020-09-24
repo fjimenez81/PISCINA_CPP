@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 19:29:34 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 19:49:58 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 10:36:44 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,9 @@ int		main(int ac, char **av)
 		return (0);
 	}
 
-	std::ofstream dst("txt_changed");
+	std::string cat = av[1];
+	cat += ".remplace";
+	std::ofstream dst(cat);
 	if (dst.fail())
 	{
 		std::cout << "ERROR: creating file error" << std::endl;

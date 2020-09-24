@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 15:30:05 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:24:37 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 13:27:50 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int	main(void)
 {
 	FragTrap	frag("CU5TM-BT");
 	ScavTrap	scav("SCAV-B8");
+	ScavTrap	over = scav;
+	FragTrap	test(frag);
 
 	scav.meleeAttack("skag");
 	scav.rangedAttack("badass");
@@ -27,8 +29,8 @@ int	main(void)
 	frag.beRepaired(60);
 	scav.beRepaired(60);
 
-	frag.vaulthunter_dot_exe("you");
-	scav.challengeNewcomer("you");
-	scav.challengeNewcomer("you");
-	scav.challengeNewcomer("you");
+	frag.vaulthunter_dot_exe("tartufo");
+	scav.challengeNewcomer("tartufo");
+	scav.challengeNewcomer("tartufo");
+	scav.challengeNewcomer("tartufo");
 }

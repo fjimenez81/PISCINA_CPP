@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:37:32 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:37:35 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 13:34:09 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,18 @@
 # include <iostream>
 # include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap {
-public:
-	ScavTrap(void);
-	ScavTrap(std::string const & name);
-	ScavTrap(const ScavTrap & src);
-	~ScavTrap(void);
+class ScavTrap : public ClapTrap
+{
+	public:
+	
+		ScavTrap(void);
+		ScavTrap(std::string const & name);
+		ScavTrap(const ScavTrap & src);
+		~ScavTrap(void);
 
-	ScavTrap & operator=(const ScavTrap & src);
+		ScavTrap & operator=(const ScavTrap & src);
 
-	void	challengeNewcomer(std::string const & target);
+		void	challengeNewcomer(std::string const & target);
 };
 
 #endif

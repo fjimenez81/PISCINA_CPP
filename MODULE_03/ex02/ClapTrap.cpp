@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:39:24 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:39:27 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 13:31:48 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ ClapTrap::ClapTrap(void)
 	_melee_atk = 30;
 	_ranged_atk = 20;
 	_dmg_reduc = 5;
-	_name = "INAC";
+	_name = "KUBO";
 	_type = "<CL4P-TP>";
 }
 

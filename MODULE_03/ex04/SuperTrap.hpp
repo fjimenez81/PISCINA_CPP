@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:54:20 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:56:22 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 13:55:08 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,10 @@
 # include "NinjaTrap.hpp"
 # include "FragTrap.hpp"
 
-class SuperTrap : public FragTrap, public NinjaTrap {
+class SuperTrap : public FragTrap, public NinjaTrap
+{
     public:
+    
         SuperTrap(void);
         SuperTrap(std::string const & name);
         SuperTrap(const SuperTrap & src);

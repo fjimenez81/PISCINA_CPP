@@ -6,7 +6,7 @@
 #    By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/23 19:30:34 by fjimenez          #+#    #+#              #
-#    Updated: 2020/06/23 19:36:38 by fjimenez         ###   ########.fr        #
+#    Updated: 2020/09/22 10:39:57 by fjimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,8 @@ clean:
 
 fclean: clean
 	@echo Cleaning $(NAME)
-	@rm -f $(NAME)
+	@rm -rf $(NAME)
+	@rm -rf *.remplace
 
 re: fclean all
 

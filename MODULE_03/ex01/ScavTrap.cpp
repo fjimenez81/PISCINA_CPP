@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:21:27 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:21:38 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 13:25:01 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ ScavTrap::ScavTrap(void)
 	_melee_atk = 20;
 	_ranged_atk = 15;
 	_dmg_reduc = 3;
-	_name = "INAC";
+	_name = "KUBO";
 }
 
 ScavTrap::ScavTrap(std::string const & name)

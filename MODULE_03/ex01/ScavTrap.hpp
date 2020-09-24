@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:16:45 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:19:49 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 13:15:16 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 
 # include <iostream>
 
-class ScavTrap {
-public:
+class ScavTrap
+{
+	public:
+
 	ScavTrap(void);
 	ScavTrap(std::string const & name);
 	ScavTrap(const ScavTrap & src);
@@ -29,7 +31,9 @@ public:
 	void	meleeAttack(std::string const & target);
 	void	takeDamage(unsigned int amount);
 	void	beRepaired(unsigned int amount);
-private:
+
+	private:
+	
 	int			_hp;
 	int			_max_hp;
 	int			_nrg;

@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 17:33:40 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 18:45:11 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/22 14:01:41 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,20 +19,22 @@
 
 class Sorcerer
 {
-private:
-	Sorcerer();
+	private:
+		Sorcerer();
 
-	std::string name;
-	std::string title;
-public:
-	Sorcerer(std::string const &name, std::string const &title);
-	Sorcerer(const Sorcerer& other);
-	virtual ~Sorcerer();
+		std::string name;
+		std::string title;
 
-	Sorcerer &operator=(const Sorcerer& other);
+	public:
+	
+		Sorcerer(std::string const &name, std::string const &title);
+		Sorcerer(const Sorcerer& other);
+		virtual ~Sorcerer();
 
-	std::string const &getName(void) const;
-	std::string const &getTitle(void) const;
+		Sorcerer &operator=(const Sorcerer& other);
+
+		std::string const &getName(void) const;
+		std::string const &getTitle(void) const;
 
 	void polymorph(Victim const &victim) const;
 };
