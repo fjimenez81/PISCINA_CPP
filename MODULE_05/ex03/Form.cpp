@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 11:05:58 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 12:35:12 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/24 15:39:47 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,10 @@ int Form::gradeToSign() const {
 
 void Form::beSigned(const Bureaucrat &b)
 {
-	if (b.getGrade() > _grade_sign) {
+	if (b.getGrade() > _grade_sign)
 		throw Form::GradeTooLowException();
-	}
-	else if (_signed) {
+	else if (_signed)
 		throw Form::AlreadySignedException();
-	}
 	else
 		_signed = true;
 }
