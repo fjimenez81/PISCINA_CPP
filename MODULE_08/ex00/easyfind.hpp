@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 19:44:24 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/28 20:03:54 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/09/29 10:16:32 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@ int &easyfind(T &cont, int n)
 
   	if (iter == cont.end())
     	throw std::runtime_error("element not found");
-
-  	return (*a);
+  	return (*iter);
 };
 
 #endif
