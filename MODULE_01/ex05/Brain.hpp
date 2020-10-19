@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:04:14 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 18:05:52 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/10/19 10:03:12 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@
 # include <sstream>
 # include <string>
 
-class Brain {
+class Brain
+{
     public:
+    
 	    std::string	identifier(void) const;
 };
 

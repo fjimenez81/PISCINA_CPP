@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 15:04:33 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/22 11:32:59 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/10/19 12:12:33 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ class Fixed {
 
     public:
 
-	    Fixed (void);
-	    Fixed (int val);
-	    Fixed (float val);
-	    Fixed (const Fixed& src);
-	    ~Fixed (void);
+	    Fixed(void);
+	    Fixed(int val);
+	    Fixed(float val);
+	    Fixed(const Fixed& src);
+	    ~Fixed(void);
 	    Fixed &		operator=(const Fixed& src);
 	    float		toFloat(void) const;
 	    int			toInt(void) const;

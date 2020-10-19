@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 16:39:37 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 17:39:21 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/10/19 09:59:31 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 
 # include <iostream>
 
-class Zombie {
+class Zombie
+{
     public:
+	
 	    void	announce(void);
 	    std::string	_name;
 	    std::string	_type;

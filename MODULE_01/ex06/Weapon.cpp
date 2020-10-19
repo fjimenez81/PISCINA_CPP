@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:16:03 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 18:33:34 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/10/19 10:17:17 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ const std::string&	Weapon::getType(void)
 	return (ref);
 }
 
-void				Weapon::setType(std::string type)
+void Weapon::setType(std::string type)
 {
 	_type = type;
 }

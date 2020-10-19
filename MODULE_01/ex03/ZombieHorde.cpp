@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ZombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 16:44:01 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 17:43:14 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/10/19 10:00:06 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ZombieHorde.hpp"
 
-ZombieHorde::~ZombieHorde(void)
+ZombieHorde::~ZombieHorde()
 {
 	delete [] _zombies;
 }

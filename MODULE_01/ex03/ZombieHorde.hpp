@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ZombieHorde.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 16:44:20 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 17:39:07 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/10/19 09:59:56 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,16 @@
 
 # include "Zombie.hpp"
 
-class ZombieHorde {
+class ZombieHorde
+{
     public:
+
 	    void	announce(void);
 	    ZombieHorde(int n);
-	    ~ZombieHorde(void);
+	    ~ZombieHorde();
+
     private:
+	
 	    Zombie	*_zombies;
 	    int		_num;
 };

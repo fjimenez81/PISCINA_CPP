@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 20:11:10 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 20:25:13 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/10/19 12:12:04 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ Fixed &	Fixed::operator=(const Fixed& src)
 {
 	std::cout << "Assignation operator called" << std::endl;
 	_value = src._value;
-	return *this;
+	return (*this);
 }
 
 Fixed::Fixed (void)
