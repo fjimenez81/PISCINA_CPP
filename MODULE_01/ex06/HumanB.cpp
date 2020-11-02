@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:17:50 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 18:34:09 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 12:49:39 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
-
-Weapon	init("fists");
 
 void	HumanB::attack(void)
 {
@@ -24,7 +22,4 @@ void	HumanB::setWeapon(Weapon &weapon)
 	_weapon = &weapon;
 }
 
-HumanB::HumanB(std::string name)
-{
-	_name = name;
-}
+HumanB::HumanB(std::string name): _name(name) {}

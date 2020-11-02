@@ -3,20 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 17:23:04 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/22 20:16:37 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 10:22:59 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phonebook.hpp"
-
-contact::~contact()
-{
-	//std::cout << "The program in closed!!" << std::endl;
-	return ;
-}
 
 void	contact::print_contact()
 {
@@ -67,7 +61,6 @@ void add(contact *contact)
 			"Darkest secret: "};
 			
 	std::string line;
-
 	std::cout << "Adding a new contact..." << std::endl;
 	for (int i = 0; i < 11; i++)
 	{
@@ -110,7 +103,6 @@ int main()
 			std::cout << "End of search\n" << std::endl;
 		}
 		else
-			std::cout << "Introduce a valid command: ADD, SEARCH or EXIT" << std::endl;
-		
+			std::cout << "Introduce a valid command: ADD, SEARCH or EXIT" << std::endl;	
 	}
 }

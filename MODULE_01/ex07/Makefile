@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+         #
+#    By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/23 19:30:34 by fjimenez          #+#    #+#              #
-#    Updated: 2020/09/22 10:39:57 by fjimenez         ###   ########.fr        #
+#    Updated: 2020/11/02 17:17:44 by fjimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Replace
+NAME = replace
 
 SRCS = main.cpp
 
@@ -20,9 +20,8 @@ CLANG = clang++ -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(SRCS)
-	$(CLANG) $(SRCS) -c
-	$(CLANG) $(OBJS) -o $(NAME)
+$(NAME): $(OBJS)
+	$(CLANG) $(SRCS) -o $(NAME)
 	@echo Done!
 
 clean:
@@ -32,7 +31,7 @@ clean:
 fclean: clean
 	@echo Cleaning $(NAME)
 	@rm -rf $(NAME)
-	@rm -rf *.remplace
+	@rm -rf *.replace
 
 re: fclean all
 

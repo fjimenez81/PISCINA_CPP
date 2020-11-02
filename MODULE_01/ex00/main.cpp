@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 20:44:31 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/22 21:30:23 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 11:13:21 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,26 +14,22 @@
 
 void	ponyOnTheHeap(std::string name)
 {
-	Pony	*p;
+	Pony *p;
 
-	std::cout << "Before scope" << std::endl;
-	if (true)
-	{
-		p = new Pony(name);
-		p->sleep();
-	}
-	std::cout << "After scope" << std::endl;
+	std::cout << "----Before----" << std::endl;
+	p = new Pony(name);
+	p->create();
+	p->sleep();
+	std::cout << "----After----" << std::endl;
 	delete p;
 }
 void	ponyOnTheStack(std::string name)
 {
-	std::cout << "Before scope" << std::endl;
-	if (true)
-	{
-		Pony	p(name);
-		p.sleep();
-	}
-	std::cout << "After scope" << std::endl;
+	std::cout << "----Before----" << std::endl;
+	Pony p(name);
+	p.create();
+	p.sleep();
+	std::cout << "----After----" << std::endl;
 }
 
 int	main(void)

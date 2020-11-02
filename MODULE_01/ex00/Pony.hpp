@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Pony.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 20:28:42 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/10/19 09:54:17 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 11:06:49 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,11 @@ class Pony
 
         ~Pony();
         Pony(std::string name);
-        void	sleep(void);
+        void	sleep();
+        void    create();
 
     private:
     
-        bool		_sleep;
         std::string _name;
 };
 

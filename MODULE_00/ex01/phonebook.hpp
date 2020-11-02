@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   phonebook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 17:28:12 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/10/19 09:51:57 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 10:22:49 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ class contact
 		std::string meal;
 		std::string color;
 		std::string secret;
-		~contact();
+		~contact() {};
 		void	add_contact(int i, std::string input);
 		void	print_contact(); 
 };

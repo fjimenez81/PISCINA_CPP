@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   Human.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:05:11 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/10/19 10:10:15 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 12:31:40 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Human.hpp"
 
-Human::Human(void) {}
+Human::Human(void): _brain() {}
 
 const Brain&	Human::getBrain(void)
 {

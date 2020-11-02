@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Pony.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 20:28:24 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/22 21:30:38 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 11:09:49 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,17 @@
 
 Pony::~Pony()
 {
-    std::cout << "exit" << std::endl;
-    return ;
+    std::cout << _name << " has been destroyed!" << std::endl;
 }
 
-Pony::Pony(std::string str)
-{
-    _name = str;
-    _sleep = true;
-}
+Pony::Pony(std::string str): _name(str) {}
 
 void Pony::sleep(void)
 {
-	if (_sleep)
-	{
-		std::cout << _name << " sleeps in the grass" << std::endl;
-		_sleep = false;
-	}
-	else
-		std::cout << _name << " isn´t sleeping in the grass" << std::endl;
+	std::cout << _name << " sleeps in the grass" << std::endl;
+}
+
+void Pony::create(void)
+{
+	std::cout << _name << " is new beautiful pony!" << std::endl;
 }

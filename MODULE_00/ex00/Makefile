@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+         #
+#    By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/22 16:50:52 by fjimenez          #+#    #+#              #
-#    Updated: 2020/06/22 20:24:20 by fjimenez         ###   ########.fr        #
+#    Updated: 2020/11/02 09:40:49 by fjimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,9 +22,8 @@ OBJS = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(SRC)
-	$(CLANG) $(SRC) -c
-	$(CLANG) $(OBJ) -o $(NAME)
+$(NAME): $(OBJS)
+	$(CLANG) $(SRC) -o $(NAME)
 	@echo "====DONE===="
 
 clean:

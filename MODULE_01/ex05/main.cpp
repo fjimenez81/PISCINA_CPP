@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:04:58 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 18:12:34 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 12:21:40 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	main(void)
 {
-	Human	p;
+	Human	bob;
 
-	std::cout << p.identifier() << std::endl;
-	std::cout << p.getBrain().identifier() << std::endl;
+	std::cout << bob.identifier() << std::endl;
+	std::cout << bob.getBrain().identifier() << std::endl;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Human.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:04:47 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/10/19 10:10:38 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 12:31:04 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Human
 	
 		Human(void);
 		std::string	identifier(void);
-		const Brain	&getBrain(void);
+		const Brain &getBrain(void);
 	
 	private:
 	
