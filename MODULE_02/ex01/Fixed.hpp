@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 15:04:33 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/10/19 12:12:33 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/02 19:45:32 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,10 @@
 # define FIXED_HPP
 
 # include <iostream>
-# include <math.h>
+# include <cmath>
 
-class Fixed {
+class Fixed
+{
 
     public:
 
@@ -24,7 +25,7 @@ class Fixed {
 	    Fixed(int val);
 	    Fixed(float val);
 	    Fixed(const Fixed& src);
-	    ~Fixed(void);
+	    ~Fixed();
 	    Fixed &		operator=(const Fixed& src);
 	    float		toFloat(void) const;
 	    int			toInt(void) const;

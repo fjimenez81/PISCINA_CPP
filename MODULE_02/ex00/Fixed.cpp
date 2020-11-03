@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 20:11:10 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/10/19 12:12:04 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/03 11:37:23 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ Fixed::Fixed (void)
 Fixed::Fixed (const Fixed& src)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	_value = src._value;
+	*this = src;
 }
 
 Fixed::~Fixed (void)

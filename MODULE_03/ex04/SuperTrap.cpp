@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   SuperTrap.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:54:36 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 16:55:45 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/03 12:58:08 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,22 +31,30 @@ SuperTrap & SuperTrap::operator=(const SuperTrap & src)
 
 // Constructors and destructors
 
-SuperTrap::SuperTrap(void) : ClapTrap()
+SuperTrap::SuperTrap(std::string const & name) : ClapTrap(100, 100, 120, 120, 1, 60, 20, 5, name, "<5UP3R-TP>"), FragTrap(name), NinjaTrap(name)
 {
 	std::cout << "<5UP3R-TP> Supertrap, ultimate lifeform!" << std::endl;
 }
 
-SuperTrap::SuperTrap(std::string const & name) : ClapTrap(100, 100, 120, 120, 1, 60, 30, 5, name, "<5UP3R-TP>")
-{
-	std::cout << "<5UP3R-TP> Supertrap, ultimate lifeform!" << std::endl;
-}
-
-SuperTrap::SuperTrap(const SuperTrap & src) : ClapTrap(src)
+SuperTrap::SuperTrap(const SuperTrap & src) : ClapTrap(src), FragTrap(src), NinjaTrap(src)
 {
 	std::cout << "<5UP3R-TP> Supertrap, cloning for greatness!" << std::endl;
+	*this = src;
 }
 
 SuperTrap::~SuperTrap(void)
 {
 	std::cout << "<5UP3R-TP> I'm leaking!" << std::endl;
+}
+
+//Actions fuctions
+
+void	SuperTrap::rangedAttack(std::string const & target)
+{
+	FragTrap::rangedAttack(target);
+}
+
+void	SuperTrap::meleeAttack(std::string const & target)
+{
+	NinjaTrap::meleeAttack(target);
 }

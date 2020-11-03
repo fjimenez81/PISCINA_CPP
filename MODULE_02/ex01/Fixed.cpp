@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 15:04:51 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 15:09:27 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/03 11:36:37 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ Fixed &			Fixed::operator=(const Fixed& src)
 {
 	std::cout << "Assignment operator called" << std::endl;
 	_value = src._value;
-	return *this;
+	return (*this);
 }
 
 std::ostream &	operator<<(std::ostream& os, const Fixed& src)
@@ -68,7 +68,7 @@ Fixed::Fixed (float val)
 Fixed::Fixed (const Fixed& src)
 {
 	std::cout << "Copy constructor called" << std::endl;
-	_value = src._value;
+	*this = src;
 }
 
 Fixed::~Fixed (void)

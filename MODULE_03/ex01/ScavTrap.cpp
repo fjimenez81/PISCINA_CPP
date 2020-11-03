@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:21:27 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/22 13:25:01 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/03 12:00:13 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ ScavTrap::ScavTrap(void)
 	_melee_atk = 20;
 	_ranged_atk = 15;
 	_dmg_reduc = 3;
-	_name = "KUBO";
+	_name = "SHINOBI";
 }
 
 ScavTrap::ScavTrap(std::string const & name)
