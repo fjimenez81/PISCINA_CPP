@@ -6,28 +6,28 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 17:23:04 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 11:34:10 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 13:19:49 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phonebook.hpp"
 
-std::string & contact::getName(void)
+std::string & Contact::getName(void)
 {
 	return (this->name);
 }
 
-std::string & contact::getSurname(void)
+std::string & Contact::getSurname(void)
 {
 	return (this->surname);
 }
 
-std::string & contact::getNick(void)
+std::string & Contact::getNick(void)
 {
 	return (this->nick);
 }
 
-void	contact::print_contact()
+void	Contact::print_contact()
 {
 	std::cout << "First name: " << name << std::endl;
 	std::cout << "Last name: " << surname << std::endl;
@@ -42,7 +42,7 @@ void	contact::print_contact()
 	std::cout << "Darkest secret: " << secret << std::endl;
 }
 
-void	contact::add_contact(int i, std::string input)
+void	Contact::add_contact(int i, std::string input)
 {
 	if (i == 0)
 		name = input;

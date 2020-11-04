@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 17:28:12 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 11:17:40 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 13:27:03 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <iostream>
 # include <string>
 
-class contact
+class Contact
 {
 	private:
 	
@@ -35,7 +35,8 @@ class contact
 		
 	public:
 
-		~contact() {};
+		Contact() {};
+		~Contact() {};
 		void	add_contact(int i, std::string input);
 		void	print_contact();
 		std::string &getName(void);
@@ -43,6 +44,6 @@ class contact
 		std::string &getNick(void);
 };
 
-void	search(contact *contacts, int max_index);
+void	search(Contact *contacts, int max_index);
 
 #endif

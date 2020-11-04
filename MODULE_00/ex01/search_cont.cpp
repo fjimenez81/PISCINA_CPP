@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 19:43:37 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 11:02:15 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 13:33:16 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	fill(std::string str)
 		std::cout << str.substr(0,9) << '.';
 }
 
-void	introduce(contact *contacts, int max_index)
+void	introduce(Contact *contacts, int max_index)
 {
 	std::string line;
 	int i;
@@ -37,11 +37,11 @@ void	introduce(contact *contacts, int max_index)
 			break ;
 		}
 		else
-			std::cout << "Please, introduce a valid index" << std::endl;
+			std::cout << "ERROR : Please, introduce a valid index" << std::endl;
 	}
 }
 
-void	search(contact *contacts, int max_index)
+void	search(Contact *contacts, int max_index)
 {
 	if (max_index == 0)
 	{

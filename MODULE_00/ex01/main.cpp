@@ -6,13 +6,13 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 11:28:39 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 13:06:08 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 13:33:51 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "phonebook.hpp"
 
-void add(contact *contact)
+void add(Contact *contact)
 {
 	std::string info[11] = {"First name: ", "Last name: ", "Nickname: ", "Login: ",
 			"Postal address: ", "Email address: ", "Phone number: ",
@@ -34,7 +34,7 @@ int main()
 {
 	int i;
 	std::string line;
-	contact contacts[8];
+	Contact contacts[8];
 
 	std::cout << "Hello!! This is your little phonebook" << std::endl;
 	i = 0;
@@ -50,7 +50,7 @@ int main()
 		else if (!line.compare("ADD"))
 		{
 			if (i == 8)
-				std::cout << "Your phonebook is full" << std::endl;
+				std::cout << "Your phonebook is full!" << std::endl;
 			else
 			{
 				add(&contacts[i]);
@@ -63,6 +63,6 @@ int main()
 			std::cout << "End of search\n" << std::endl;
 		}
 		else
-			std::cout << "Introduce a valid command: ADD, SEARCH or EXIT" << std::endl;	
+			std::cout << "ERROR: ";	
 	}
 }
