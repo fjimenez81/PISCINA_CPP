@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 16:34:44 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/02 09:36:12 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 13:04:04 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int ac, char **av)
 		for (int i = 1; i < ac; i++)
 			for (int j = 0; av[i][j]; j++)
 				std::cout << (char)std::toupper(av[i][j]);
-		std::cout << "\n";
+		std::cout << std::endl;
 	}
 	return (0);
 }

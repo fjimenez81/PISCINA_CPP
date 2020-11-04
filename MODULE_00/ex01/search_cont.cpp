@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 19:43:37 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/02 09:55:54 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 11:02:15 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,11 +51,11 @@ void	search(contact *contacts, int max_index)
 	for (int i = 0; i < max_index; i++)
 	{
 		std::cout << "|" << std::setw(10) << (i + 1) << '|';
-		fill(contacts[i].name);
+		fill(contacts[i].getName());
 		std::cout << '|';
-		fill(contacts[i].surname);
+		fill(contacts[i].getSurname());
 		std::cout << '|';
-		fill(contacts[i].nick);
+		fill(contacts[i].getNick());
 		std::cout << "|\n";
 	}
 	introduce(contacts, max_index);
