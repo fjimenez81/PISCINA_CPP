@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 16:23:31 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 16:41:20 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 17:44:59 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 int main(int ac, char **av)
 {
-    if (ac == 4)
-    {
-        File file(av[1]);
-        if (!file.actions(av[2], av[3]))
-            return (1);
-    }
-    else
-    {
+	if (ac == 4)
+	{
+		File file(av[1]);
+		if (!file.actions(av[2], av[3]))
+			return (1);
+	}
+	else
+	{
 		std::cout << "ERROR: invalid arguments" << std::endl;
 		return (1);
 	}
-    return (0);
+	return (0);
 }
