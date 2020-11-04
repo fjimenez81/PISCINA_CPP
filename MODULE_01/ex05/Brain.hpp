@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:04:14 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/10/19 10:03:12 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 19:05:28 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@
 class Brain
 {
     public:
-    
+
+        Brain() {};
+        ~Brain() {};
 	    std::string	identifier(void) const;
 };
 

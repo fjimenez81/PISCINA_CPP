@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 16:39:37 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/10/19 09:59:31 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 19:02:41 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ class Zombie
 {
     public:
 	
-	    void	announce(void);
+	    ~Zombie() {};
+		void	announce(void);
 	    std::string	_name;
 	    std::string	_type;
 };

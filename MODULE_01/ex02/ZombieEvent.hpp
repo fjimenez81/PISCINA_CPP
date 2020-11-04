@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 15:25:07 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/03 16:43:18 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 19:03:36 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class ZombieEvent
 		void	randomChump(void);
 		void    announce(std::string name);
 		ZombieEvent(void);
+		~ZombieEvent(void) {};
 		
 	private:
 	

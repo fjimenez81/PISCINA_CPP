@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 16:19:00 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 17:59:24 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/04 18:55:12 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,7 @@ std::string File::replace(std::string rdfile, std::string s1, std::string s2)
 }
 
 int File::actions(std::string s1, std::string s2)
-{
-	std::stringstream	rdfile;
-	
+{	
 	if (!_file.is_open() || !_file.good())
 	{
 		std::cout << "ERROR: opening file error" << std::endl;
@@ -53,8 +51,8 @@ int File::actions(std::string s1, std::string s2)
 	_dest.open(_filename, std::ofstream::trunc);
 	if (_dest.is_open())
 	{
-		rdfile << _file.rdbuf();
-		_dest << replace(rdfile.str(), s1, s2);
+		_rdfile << _file.rdbuf();
+		_dest << replace(_rdfile.str(), s1, s2);
 		_dest.close();
 		return (1);
 	}
