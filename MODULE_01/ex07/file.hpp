@@ -1,33 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   file.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 15:25:07 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/03 16:43:18 by fjimenez         ###   ########.fr       */
+/*   Created: 2020/11/04 16:15:33 by fjimenez          #+#    #+#             */
+/*   Updated: 2020/11/04 17:42:44 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIEEVENT_HPP
-# define ZOMBIEEVENT_HPP
+#ifndef FILE_HPP
+# define FILE_HPP
 
-# include "Zombie.hpp"
+# include <iostream>
+# include <fstream>
+# include <sstream>
 
-class ZombieEvent
+class File
 {
-	public:
+    public:
 
-		void	setZombieType(std::string type);
-		Zombie	*newZombie(std::string name);
-		void	randomChump(void);
-		void    announce(std::string name);
-		ZombieEvent(void);
-		
-	private:
-	
-		std::string	_setType;
+        File() {};
+        ~File();
+        File(char *av);
+
+        int actions(std::string s1, std::string s2);
+        std::string replace(std::string rdfile, std::string s1, std::string s2);
+        
+    private:
+    
+		std::ifstream	_file;
+		std::ofstream	_dest;
+		std::string		_filename;
 };
+
 
 #endif

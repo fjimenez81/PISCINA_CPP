@@ -1,33 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ZombieEvent.hpp                                    :+:      :+:    :+:   */
+/*   test_main.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/06/23 15:25:07 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/03 16:43:18 by fjimenez         ###   ########.fr       */
+/*   Created: 2020/11/04 16:23:31 by fjimenez          #+#    #+#             */
+/*   Updated: 2020/11/04 16:41:20 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIEEVENT_HPP
-# define ZOMBIEEVENT_HPP
+#include "file.hpp"
 
-# include "Zombie.hpp"
-
-class ZombieEvent
+int main(int ac, char **av)
 {
-	public:
-
-		void	setZombieType(std::string type);
-		Zombie	*newZombie(std::string name);
-		void	randomChump(void);
-		void    announce(std::string name);
-		ZombieEvent(void);
-		
-	private:
-	
-		std::string	_setType;
-};
-
-#endif
+    if (ac == 4)
+    {
+        File file(av[1]);
+        if (!file.actions(av[2], av[3]))
+            return (1);
+    }
+    else
+    {
+		std::cout << "ERROR: invalid arguments" << std::endl;
+		return (1);
+	}
+    return (0);
+}
