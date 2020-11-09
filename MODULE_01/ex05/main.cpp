@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:04:58 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/02 12:21:40 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 11:41:34 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ int	main(void)
 {
 	Human	bob;
 
-	std::cout << bob.identifier() << std::endl;
-	std::cout << bob.getBrain().identifier() << std::endl;
+	std::cout << bob.identify() << std::endl;
+	std::cout << bob.getBrain().identify() << std::endl;
 }

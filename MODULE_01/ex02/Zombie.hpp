@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 15:21:04 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 19:03:59 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 10:58:36 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,15 @@ class Zombie
 {
 	public:
 	
+		Zombie() {};
 		~Zombie() {};
-		void	advert(void);
+		Zombie(std::string name);
+		Zombie(std::string name, std::string type);
+		void	advert();
+		void    announce();
+	
+	private:
+	
 		std::string	_name;
 		std::string	_type;
 };

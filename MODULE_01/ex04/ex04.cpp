@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ex04.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 17:46:35 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 17:46:55 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 11:26:56 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 int	main(void)
 {
-	std::string	str = "HELLO THIS IS BRAIN";
+	std::string	str = "HI THIS IS BRAIN";
 	std::string	*ptr = &str;
 	std::string	&ref = str;
 
-	std::cout << str << std::endl;
 	std::cout << *ptr << std::endl;
 	std::cout << ref << std::endl;
 

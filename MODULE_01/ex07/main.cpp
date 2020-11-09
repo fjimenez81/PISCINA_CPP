@@ -6,11 +6,11 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 16:23:31 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 18:28:24 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 12:09:08 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "file.hpp"
+#include "File.hpp"
 
 int main(int ac, char **av)
 {

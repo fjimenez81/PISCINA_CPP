@@ -6,20 +6,18 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 18:05:11 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/02 12:31:40 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 11:41:00 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Human.hpp"
 
-Human::Human(void): _brain() {}
-
-const Brain&	Human::getBrain(void)
+const Brain&	Human::getBrain()
 {
 	return (_brain);
 }
 
-std::string		Human::identifier(void)
+std::string		Human::identify() const
 {
-	return (_brain.identifier());
+	return (_brain.identify());
 }

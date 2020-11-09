@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 20:28:24 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/02 11:09:49 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 09:53:01 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,20 @@
 
 Pony::~Pony()
 {
-    std::cout << _name << " has been destroyed!" << std::endl;
+    std::cout << "The pony has been destroyed!" << std::endl;
 }
 
-Pony::Pony(std::string str): _name(str) {}
+Pony::Pony()
+{
+	std::cout << "Born a new beautiful pony!" << std::endl;
+}
 
 void Pony::sleep(void)
 {
-	std::cout << _name << " sleeps in the grass" << std::endl;
+	std::cout << "The pony is sleeping in the grass!" << std::endl;
 }
 
-void Pony::create(void)
+void Pony::eat(void)
 {
-	std::cout << _name << " is new beautiful pony!" << std::endl;
+	std::cout << "The pony is eating fresh grass!" << std::endl;
 }

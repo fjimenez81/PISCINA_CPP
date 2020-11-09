@@ -6,13 +6,13 @@
 #    By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/23 19:30:34 by fjimenez          #+#    #+#              #
-#    Updated: 2020/11/04 17:54:54 by fjimenez         ###   ########.fr        #
+#    Updated: 2020/11/09 12:08:55 by fjimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = replace
 
-SRCS = main.cpp file.cpp
+SRCS = main.cpp File.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

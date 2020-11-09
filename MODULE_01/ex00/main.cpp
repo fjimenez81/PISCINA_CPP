@@ -6,36 +6,38 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 20:44:31 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/02 11:13:21 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 09:51:55 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Pony.hpp"
 
-void	ponyOnTheHeap(std::string name)
+void	ponyOnTheHeap()
 {
 	Pony *p;
 
+	std::cout << "Pony is on the heap" << std::endl;
 	std::cout << "----Before----" << std::endl;
-	p = new Pony(name);
-	p->create();
+	p = new Pony();
+	p->eat();
 	p->sleep();
-	std::cout << "----After----" << std::endl;
 	delete p;
+	std::cout << "----After----" << std::endl;
 }
-void	ponyOnTheStack(std::string name)
+void	ponyOnTheStack()
 {
+	std::cout << "Pony is on the stack" << std::endl;
 	std::cout << "----Before----" << std::endl;
-	Pony p(name);
-	p.create();
+	Pony p;
+	p.eat();
 	p.sleep();
 	std::cout << "----After----" << std::endl;
 }
 
 int	main(void)
 {
-	ponyOnTheStack("Pedrito cara-estaca");
+	ponyOnTheStack();
 	std::cout << std::endl;
-	ponyOnTheHeap("Juanito cara_hippy");
+	ponyOnTheHeap();
 	return (0);
 }

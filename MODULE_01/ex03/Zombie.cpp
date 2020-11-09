@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 16:42:36 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/23 17:39:14 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 11:08:51 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-void Zombie::announce(void)
+void Zombie::announce()
 {
     std::cout << "<" << _name << " (" << _type << ")> Braiiiiiiinnnssss..." << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 16:44:01 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/02 12:05:34 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 11:23:02 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 ZombieHorde::~ZombieHorde()
 {
+	 std::cout << "The horde has been destroyed!" << std::endl;
 	delete [] _zombies;
 }
 
