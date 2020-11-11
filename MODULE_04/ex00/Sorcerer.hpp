@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Sorcerer.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 17:33:40 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/22 14:01:41 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/03 13:21:23 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 class Sorcerer
 {
 	private:
+
 		Sorcerer();
 
 		std::string name;
@@ -36,7 +37,7 @@ class Sorcerer
 		std::string const &getName(void) const;
 		std::string const &getTitle(void) const;
 
-	void polymorph(Victim const &victim) const;
+		void polymorph(Victim const &victim) const;
 };
 
 std::ostream &operator<<(std::ostream &out, Sorcerer const &sorcerer);

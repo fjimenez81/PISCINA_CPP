@@ -6,11 +6,67 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:21:27 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/03 12:00:13 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/11 12:16:41 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
+
+ScavTrap::ScavTrap(void)
+{
+	srand(time(0));
+	std::cout << "Scavtrap, ready to serve!" << std::endl;
+	_hp = 100;
+	_max_hp = 100;
+	_nrg = 50;
+	_max_nrg = 50;
+	_lvl = 1;
+	_melee_atk = 20;
+	_ranged_atk = 15;
+	_dmg_reduc = 3;
+	_name = "JHONY";
+}
+
+ScavTrap::ScavTrap(std::string const & name)
+{
+	srand(time(0));
+	std::cout << "Scavtrap, ready to serve!" << std::endl;
+	_hp = 100;
+	_max_hp = 100;
+	_nrg = 50;
+	_max_nrg = 50;
+	_lvl = 1;
+	_melee_atk = 20;
+	_ranged_atk = 15;
+	_dmg_reduc = 3;
+	_name = name;
+}
+
+ScavTrap::ScavTrap(const ScavTrap & src)
+{
+	srand(time(0));
+	std::cout << "Scavtrap, passing on responsibilities!" << std::endl;
+	*this = src;
+}
+
+ScavTrap::~ScavTrap(void)
+{
+	std::cout << "I'm too pretty to die!" << std::endl;
+}
+
+ScavTrap & ScavTrap::operator=(const ScavTrap & src)
+{
+	_hp = src._hp;
+	_max_hp = src._max_hp;
+	_nrg = src._nrg;
+	_max_nrg = src._max_nrg;
+	_lvl = src._lvl;
+	_melee_atk = src._melee_atk;
+	_ranged_atk = src._ranged_atk;
+	_dmg_reduc = src._dmg_reduc;
+	_name = src._name;
+	return (*this);
+}
 
 void	ScavTrap::challengeNewcomer(std::string const & target)
 {
@@ -74,72 +130,4 @@ void	ScavTrap::beRepaired(unsigned int amount)
 		std::cout << "nothing!" << std::endl;
 	if (_hp == 100)
 		std::cout << "5C4V-TP " << _name << " is full health!" << std::endl;
-}
-
-// Overloaders
-
-ScavTrap & ScavTrap::operator=(const ScavTrap & src)
-{
-	_hp = src._hp;
-	_max_hp = src._max_hp;
-	_nrg = src._nrg;
-	_max_nrg = src._max_nrg;
-	_lvl = src._lvl;
-	_melee_atk = src._melee_atk;
-	_ranged_atk = src._ranged_atk;
-	_dmg_reduc = src._dmg_reduc;
-	_name = src._name;
-	return (*this);
-}
-
-// Constructors and destructors
-
-ScavTrap::ScavTrap(void)
-{
-	srand(time(0));
-	std::cout << "Scavtrap, ready to serve!" << std::endl;
-	_hp = 100;
-	_max_hp = 100;
-	_nrg = 50;
-	_max_nrg = 50;
-	_lvl = 1;
-	_melee_atk = 20;
-	_ranged_atk = 15;
-	_dmg_reduc = 3;
-	_name = "SHINOBI";
-}
-
-ScavTrap::ScavTrap(std::string const & name)
-{
-	srand(time(0));
-	std::cout << "Scavtrap, ready to serve!" << std::endl;
-	_hp = 100;
-	_max_hp = 100;
-	_nrg = 50;
-	_max_nrg = 50;
-	_lvl = 1;
-	_melee_atk = 20;
-	_ranged_atk = 15;
-	_dmg_reduc = 3;
-	_name = name;
-}
-
-ScavTrap::ScavTrap(const ScavTrap & src)
-{
-	srand(time(0));
-	std::cout << "Scavtrap, passing on responsibilities!" << std::endl;
-	_hp = src._hp;
-	_max_hp = src._max_hp;
-	_nrg = src._nrg;
-	_max_nrg = src._max_nrg;
-	_lvl = src._lvl;
-	_melee_atk = src._melee_atk;
-	_ranged_atk = src._ranged_atk;
-	_dmg_reduc = src._dmg_reduc;
-	_name = src._name;
-}
-
-ScavTrap::~ScavTrap(void)
-{
-	std::cout << "I'm too pretty to die!" << std::endl;
 }

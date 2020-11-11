@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:36:11 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/22 13:44:39 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/11 12:27:29 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class FragTrap : public virtual ClapTrap
 {
 	public:
+	
 		FragTrap(void);
 		FragTrap(std::string const & name);
 		FragTrap(const FragTrap & src);

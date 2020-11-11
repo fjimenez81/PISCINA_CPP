@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 17:33:34 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 18:42:49 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/03 15:49:23 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,24 @@ int	main(void)
 	robert.polymorph(jim);
 	robert.polymorph(joe);
 	//joe.getPolymorphed();
+
+	Peon cloneJoe(joe);
+	std::cout << cloneJoe;
+
+	Victim cloneJim(jim);
+	std::cout << cloneJim;
+	cloneJim = joe;
+	std::cout << cloneJim;
+
+	Sorcerer cloneRobert(robert);
+	std::cout << cloneRobert;
+
+	std::cout << "\nHeap : \n" << std::endl;
+
+	Peon *Pedrito = new Peon("Pedrito");
+	Pedrito->getPolymorphed();
+	delete Pedrito;
+	std::cout << "\n";
 
 	return 0;
 }

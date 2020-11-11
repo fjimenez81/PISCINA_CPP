@@ -6,7 +6,7 @@
 #    By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/06/22 16:50:52 by fjimenez          #+#    #+#              #
-#    Updated: 2020/11/04 11:29:39 by fjimenez         ###   ########.fr        #
+#    Updated: 2020/11/09 11:28:20 by fjimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,7 @@ CLANG = clang++ -Wall -Wextra -Werror
 
 RM = rm -rf
 
-SRC = main.cpp phonebook.cpp search_cont.cpp
+SRC = main.cpp Contact.cpp search_cont.cpp
 
 OBJS = $(SRC:.cpp=.o)
 

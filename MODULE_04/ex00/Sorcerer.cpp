@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Sorcerer.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 18:11:01 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 18:45:34 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/03 13:14:02 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ Sorcerer::Sorcerer(Sorcerer const &other):
 
 Sorcerer::~Sorcerer()
 {
-	std::cout << this->name << ", " << this->title\
-			<< ", is dead. Consequences will never be the same !" << std::endl;
+	std::cout << this->name << ", " << this->title \
+		<< ", is dead. Consequences will never be the same !" << std::endl;
 }
 
 Sorcerer &Sorcerer::operator=(Sorcerer const &other)

@@ -3,14 +3,70 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 15:29:31 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 15:52:15 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/11 12:14:18 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
+
+FragTrap::FragTrap(void)
+{
+	srand(time(0));
+	std::cout << "Fragtrap, starting bootup sequence!" << std::endl;
+	_hp = 100;
+	_max_hp = 100;
+	_nrg = 100;
+	_max_nrg = 100;
+	_lvl = 1;
+	_melee_atk = 30;
+	_ranged_atk = 20;
+	_dmg_reduc = 5;
+	_name = "KUBO";
+}
+
+FragTrap::FragTrap(std::string const & name)
+{
+	srand(time(0));
+	std::cout << "Fragtrap, starting bootup sequence!" << std::endl;
+	_hp = 100;
+	_max_hp = 100;
+	_nrg = 100;
+	_max_nrg = 100;
+	_lvl = 1;
+	_melee_atk = 30;
+	_ranged_atk = 20;
+	_dmg_reduc = 5;
+	_name = name;
+}
+
+FragTrap::FragTrap(const FragTrap & src)
+{
+	srand(time(0));
+	std::cout << "Fragtrap, copying memory board!" << std::endl;
+	*this = src;
+}
+
+FragTrap::~FragTrap(void)
+{
+	std::cout << "Good thing I don't have a soul!" << std::endl;
+}
+
+FragTrap & FragTrap::operator=(const FragTrap & src)
+{
+	_hp = src._hp;
+	_max_hp = src._max_hp;
+	_nrg = src._nrg;
+	_max_nrg = src._max_nrg;
+	_lvl = src._lvl;
+	_melee_atk = src._melee_atk;
+	_ranged_atk = src._ranged_atk;
+	_dmg_reduc = src._dmg_reduc;
+	_name = src._name;
+	return (*this);
+}
 
 void	FragTrap::rangedAttack(std::string const & target)
 {
@@ -74,72 +130,4 @@ void	FragTrap::vaulthunter_dot_exe(std::string const & target)
 	}
 	else
 		std::cout << "FR4G-TP " << _name << " is out of energy!" << std::endl;
-}
-
-// Overloaders
-
-FragTrap & FragTrap::operator=(const FragTrap & src)
-{
-	_hp = src._hp;
-	_max_hp = src._max_hp;
-	_nrg = src._nrg;
-	_max_nrg = src._max_nrg;
-	_lvl = src._lvl;
-	_melee_atk = src._melee_atk;
-	_ranged_atk = src._ranged_atk;
-	_dmg_reduc = src._dmg_reduc;
-	_name = src._name;
-	return (*this);
-}
-
-// Constructors and destructors
-
-FragTrap::FragTrap(void)
-{
-	srand(time(0));
-	std::cout << "Fragtrap, starting bootup sequence!" << std::endl;
-	_hp = 100;
-	_max_hp = 100;
-	_nrg = 100;
-	_max_nrg = 100;
-	_lvl = 1;
-	_melee_atk = 30;
-	_ranged_atk = 20;
-	_dmg_reduc = 5;
-	_name = "INAC";
-}
-
-FragTrap::FragTrap(std::string const & name)
-{
-	srand(time(0));
-	std::cout << "Fragtrap, starting bootup sequence!" << std::endl;
-	_hp = 100;
-	_max_hp = 100;
-	_nrg = 100;
-	_max_nrg = 100;
-	_lvl = 1;
-	_melee_atk = 30;
-	_ranged_atk = 20;
-	_dmg_reduc = 5;
-	_name = name;
-}
-
-FragTrap::FragTrap(const FragTrap & src)
-{
-	srand(time(0));
-	std::cout << "Fragtrap, copying memory board!" << std::endl;
-	_hp = src._hp;
-	_max_hp = src._max_hp;
-	_nrg = src._nrg;
-	_max_nrg = src._max_nrg;
-	_lvl = src._lvl;
-	_melee_atk = src._melee_atk;
-	_ranged_atk = src._ranged_atk;
-	_dmg_reduc = src._dmg_reduc;
-	_name = src._name;
-}
-
-FragTrap::~FragTrap(void)
-{
-	std::cout << "Good thing I don't have a soul!" << std::endl;
 }

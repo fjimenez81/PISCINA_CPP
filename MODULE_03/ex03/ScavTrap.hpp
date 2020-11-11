@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 16:37:32 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/22 13:43:42 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/11 12:25:20 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 class ScavTrap : public ClapTrap 
 {
 	public:
+	
 		ScavTrap(void);
 		ScavTrap(std::string const & name);
 		ScavTrap(const ScavTrap & src);

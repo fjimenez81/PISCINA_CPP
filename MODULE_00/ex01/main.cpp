@@ -6,11 +6,11 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 11:28:39 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/04 13:33:51 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/09 11:29:11 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "phonebook.hpp"
+#include "Contact.hpp"
 
 void add(Contact *contact)
 {

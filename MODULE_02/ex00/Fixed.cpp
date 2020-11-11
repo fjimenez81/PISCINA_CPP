@@ -6,30 +6,11 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 20:11:10 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/03 11:37:23 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/11 09:34:13 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
-
-int		Fixed::getRawBits(void)
-{
-	std::cout << "getRawBits member function called" << std::endl;
-	return (_value);
-}
-
-void	Fixed::setRawBits(const int raw)
-{
-	std::cout << "setRawBits member function called" << std::endl;
-	_value = raw;
-}
-
-Fixed &	Fixed::operator=(const Fixed& src)
-{
-	std::cout << "Assignation operator called" << std::endl;
-	_value = src._value;
-	return (*this);
-}
 
 Fixed::Fixed (void)
 {
@@ -46,4 +27,23 @@ Fixed::Fixed (const Fixed& src)
 Fixed::~Fixed (void)
 {
 	std::cout << "Destructor called" << std::endl;
+}
+
+Fixed &	Fixed::operator=(const Fixed& src)
+{
+	std::cout << "Assignation operator called" << std::endl;
+	this->_value = src.getRawBits();
+	return (*this);
+}
+
+int		Fixed::getRawBits(void) const
+{
+	std::cout << "getRawBits member function called" << std::endl;
+	return (_value);
+}
+
+void	Fixed::setRawBits(const int raw)
+{
+	std::cout << "setRawBits member function called" << std::endl;
+	_value = raw;
 }

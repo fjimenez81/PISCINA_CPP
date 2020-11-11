@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/29 15:29:50 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/06/29 15:41:05 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/11 11:47:49 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 class FragTrap
 {
     public:
+
         FragTrap(void);
         FragTrap(std::string const & name);
         FragTrap(const FragTrap & src);
@@ -28,7 +29,9 @@ class FragTrap
 	    void	takeDamage(unsigned int amount);
 	    void	beRepaired(unsigned int amount);
         void	vaulthunter_dot_exe(std::string const & target);
+		
     private:
+	
         int			_hp;
 	    int			_max_hp;
 	    int			_nrg;

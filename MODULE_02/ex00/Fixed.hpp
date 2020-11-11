@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/23 20:10:57 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/22 11:16:16 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/11 09:56:02 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FIXED_HPP
 
 # include <iostream>
-# include <string>
 
 class Fixed {
 
@@ -24,7 +23,7 @@ class Fixed {
 	    Fixed (const Fixed& src);
 	    ~Fixed (void);
 	    Fixed &	operator=(const Fixed& src);
-	    int		getRawBits(void);
+	    int		getRawBits(void) const;
 	    void	setRawBits(const int raw);
 		
     private:
