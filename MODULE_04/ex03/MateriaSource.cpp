@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/23 16:33:41 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 09:36:01 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/12 17:59:55 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "MarteriaSource.hpp"
+#include "MateriaSource.hpp"
 
 MateriaSource::MateriaSource(): _cont(0) {}
 

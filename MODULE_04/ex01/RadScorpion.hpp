@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   RadScorpion.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 16:48:05 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/22 18:56:02 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/12 17:07:26 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class RadScorpion: public Enemy
 
         RadScorpion();
         RadScorpion(int hp, std::string const & type);
-        ~RadScorpion();
+        virtual ~RadScorpion();
         RadScorpion(const RadScorpion &copy);
         RadScorpion& operator=(const RadScorpion &copy);
         std::string const getType() const;

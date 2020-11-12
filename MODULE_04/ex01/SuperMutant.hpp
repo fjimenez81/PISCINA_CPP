@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   SuperMutant.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/22 16:45:35 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/22 18:43:57 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/12 17:07:37 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class SuperMutant: public Enemy
 
         SuperMutant();
         SuperMutant(int hp, std::string const & type);
-        ~SuperMutant();
+        virtual ~SuperMutant();
         SuperMutant(const SuperMutant &copy);
         SuperMutant& operator=(const SuperMutant &copy);
         std::string const getType() const;
