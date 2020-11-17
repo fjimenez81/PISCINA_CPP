@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mutantstack.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 20:25:32 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/29 11:08:04 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/17 18:42:50 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,26 +23,16 @@ class MutantStack : public std::stack<T>
     public:
 
         MutantStack() : std::stack<T>() {};
-        MutantStack(MutantStack &copy) : std::stack<T>(copy) {};
+        MutantStack(MutantStack const &copy) : std::stack<T>(copy) {};
         virtual ~MutantStack() {};
 
-        MutantStack &operator=(const MutantStack &other)
-        {
-            this->c = other.c;
-            return (*this);
-        }
+        MutantStack &operator=(const MutantStack &other);
 
         typedef typename std::stack<T>::container_type::iterator iterator;
 
-        iterator begin()
-        {
-            return (std::begin(this->c));
-        }
+        iterator begin();
 
-        iterator end()
-        {
-            return (std::end(this->c));
-        }
+        iterator end();
 };
 
 #endif

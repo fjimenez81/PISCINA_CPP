@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Array.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 18:41:19 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/28 19:35:47 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/17 16:19:38 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class Array
 
 	public:
 
-		Array(): array_(new T[0]), _size(0) {}
+		Array(): array_(NULL), _size(0) {}
 		Array(unsigned int n): array_(new T[n]), _size(n) {}
 		Array(const Array &src): array_(NULL), _size(0) {*this = src;}
 		~Array() {delete [] array_;}
@@ -49,7 +49,7 @@ class Array
 		{
     		if (idx >= _size || idx < 0)
     			throw Array::OutOfLimit();
-    		return array_[idx];
+    		return (array_[idx]);
   		}
 
 		int size() const {return (_size);}

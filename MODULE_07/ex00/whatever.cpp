@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   whatever.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 17:52:24 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/28 18:14:43 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/17 15:36:51 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,8 @@ T max(T &a, T &b)
 
 int main()
 {
-    int a = 1;
-    int b = 5;
+    int a = 2;
+    int b = 3;
 
 	::swap(a, b);
 	std::cout << "a = " << a << ", b = " << b << std::endl;

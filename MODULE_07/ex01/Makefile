@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+         #
+#    By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/28 18:35:33 by fjimenez          #+#    #+#              #
-#    Updated: 2020/09/28 18:35:44 by fjimenez         ###   ########.fr        #
+#    Updated: 2020/11/17 15:44:43 by fjimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = iter
 
-SRC = iter.cpp
+SRC = iter.cpp main.cpp
 
 OBJS = ${SRC:.cpp=.o}
 

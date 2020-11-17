@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   iter.cpp                                           :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/28 18:28:17 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/17 15:44:19 by fjimenez         ###   ########.fr       */
+/*   Created: 2020/11/17 15:43:54 by fjimenez          #+#    #+#             */
+/*   Updated: 2020/11/17 15:45:51 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "iter.cpp"
 
 template <class T>
-void iter(T *tab, size_t len_tab, void (*f)(T const &))
+void print(T const &str) {
+  std::cout << str << std::endl;
+}
+
+int main()
 {
-  	if (len_tab == 0 || !f)
-        return;
-    for (size_t i = 0; i < len_tab; i++)
-        f(tab[i]);
+    std::string tst[] = {"Tintín se fue a la guerra", "y descubrió"};
+    iter(tst, 2, print);
+
+    int tst1[] = {1, 2, 3, 4};
+    iter(tst1, 4, print);
+    return (0);
 }
