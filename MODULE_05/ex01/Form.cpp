@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 11:05:58 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 11:39:30 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/16 09:40:59 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,30 +39,32 @@ Form & Form::operator=(const Form &copy)
 	return (*this);
 }
 
-std::string Form::getName() const {
-  return (_name);
+std::string Form::getName() const
+{
+	return (_name);
 }
 
-bool Form::isSigned() const {
-  return (_signed);
+bool Form::isSigned() const
+{
+	return (_signed);
 }
 
-int Form::gradeRequired() const {
-  return (_grade_req);
+int Form::gradeRequired() const
+{
+	return (_grade_req);
 }
 
-int Form::gradeToSign() const {
-  return (_grade_sign);
+int Form::gradeToSign() const
+{
+	return (_grade_sign);
 }
 
 void Form::beSigned(const Bureaucrat &b)
 {
-	if (b.getGrade() > _grade_sign) {
+	if (b.getGrade() > _grade_sign)
 		throw Form::GradeTooLowException();
-	}
-	else if (_signed) {
+	else if (_signed)
 		throw Form::AlreadySignedException();
-	}
 	else
 		_signed = true;
 }

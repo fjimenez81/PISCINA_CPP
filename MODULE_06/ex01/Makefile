@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+         #
+#    By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/28 16:52:42 by fjimenez          #+#    #+#              #
-#    Updated: 2020/09/28 16:53:50 by fjimenez         ###   ########.fr        #
+#    Updated: 2020/11/17 12:10:53 by fjimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = serialize
 
-SRC = Serialize.cpp
+SRC = Serialize.cpp main.cpp
 
 OBJS = ${SRC:.cpp=.o}
 

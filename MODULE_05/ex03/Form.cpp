@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 11:05:58 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 15:42:34 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/16 15:54:27 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ const char *Form::NotSigned::what() const throw()
     return "form not signed";
 }
 
-void Form::execute(const Bureaucrat &b) const
+void Form::execute(Bureaucrat const &b) const
 {
 	if (b.getGrade() > _grade_req) 
 		throw Form::GradeTooLowException();

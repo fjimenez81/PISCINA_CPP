@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Form.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 11:05:45 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 12:27:12 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/17 09:22:09 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ class Form
         int gradeToSign() const;
         void beSigned(const Bureaucrat &b);
 
-        void execute(const Bureaucrat &executor) const;
+        virtual void execute(Bureaucrat const &executor) const;
         void setTarget(std::string &target);
         std::string getTarget() const;
         virtual void action() const = 0;

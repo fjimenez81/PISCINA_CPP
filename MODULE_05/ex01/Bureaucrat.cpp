@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 10:33:56 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 11:54:18 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/16 09:39:51 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,12 +74,14 @@ void Bureaucrat::Relegate()
     _grade++;
 }
 
-const char *Bureaucrat::GradeTooHighException::what() const throw() {
-  return "Grade too high";
+const char *Bureaucrat::GradeTooHighException::what() const throw()
+{
+	return "Grade too high";
 }
 
-const char *Bureaucrat::GradeTooLowException::what() const throw() {
-  return "Grade too low";
+const char *Bureaucrat::GradeTooLowException::what() const throw()
+{
+	return "Grade too low";
 }
 
 std::ostream &operator<<(std::ostream &out, Bureaucrat const &in)

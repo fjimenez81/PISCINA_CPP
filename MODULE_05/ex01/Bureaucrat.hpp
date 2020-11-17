@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 10:22:15 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 11:44:17 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/13 12:26:54 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,11 @@ class Bureaucrat
 				const char *what() const throw();
 		};
 
-		private:
+	private:
 
-			Bureaucrat();
-			const std::string _name;
-			int _grade;
+		Bureaucrat();
+		const std::string _name;
+		int _grade;
 };
 
 std::ostream &operator<<(std::ostream &out, Bureaucrat const &in);

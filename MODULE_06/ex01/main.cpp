@@ -5,46 +5,24 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/24 10:53:56 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/16 15:45:19 by fjimenez         ###   ########.fr       */
+/*   Created: 2020/11/17 11:37:27 by fjimenez          #+#    #+#             */
+/*   Updated: 2020/11/17 12:35:31 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Bureaucrat.hpp"
-
-#define PRINT(value) (std::cout << value << std::endl);
+#include "Serialize.hpp"
 
 int main()
 {
-  	Bureaucrat Tartufo("Tartufo", 2);
+	void *tst;
+	Data *data;
 
-	PRINT(Tartufo);
-	try {
-		Bureaucrat Perro("Perro", 156);
-	}
-	catch (std::exception &e) {
-		PRINT(e.what());
-	};
-
-	try
-	{
-		Tartufo.Promote();
-		Tartufo.Promote();
-	}
-	catch (std::exception &e)
-	{
-		PRINT(e.what());
-	}
-	PRINT(Tartufo);
-
-	try
-	{
-		Tartufo.Relegate();
-		Tartufo.Relegate();
-	}
-	catch (std::exception &e)
-	{
-		PRINT(e.what());
-	}
-	PRINT(Tartufo);
+	tst = serialize();
+	data = deserialize(tst);
+    
+	std::cout << data->s1 << " " << data->n << " " << data->s2 << std::endl;
+  	delete static_cast<char*>(tst);
+  	delete data;
+		
+    return (0);
 }

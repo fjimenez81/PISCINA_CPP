@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Intern.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 12:42:12 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 15:07:03 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/16 16:06:26 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include "ShrubberyCreationForm.hpp"
 
 # include <iostream>
+# include <string>
 
 class Intern
 {
@@ -36,5 +37,7 @@ class Intern
 
         Form *makeForm(std::string const &form, std::string const &target);
 };
+
+std::string	ft_lower(std::string str);
 
 #endif

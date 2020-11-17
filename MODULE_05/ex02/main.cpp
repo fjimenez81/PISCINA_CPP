@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/24 11:41:39 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/09/24 12:28:28 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/16 15:51:02 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,26 +18,28 @@
 
 int main()
 {
-  	Bureaucrat				john("John", 1);
-	ShrubberyCreationForm	shrub("cozy");
-	RobotomyRequestForm		robot("Mike");
-	PresidentialPardonForm	pres("Jerry Smith");
+  	Bureaucrat				pedri("Pedrito", 1);
+	ShrubberyCreationForm	shrub("Becker");
+	RobotomyRequestForm		robot("Bender");
+	PresidentialPardonForm	pres("Sanchez");
 
   	try {
-    john.executeForm(shrub);
+
+    	pedri.executeForm(shrub);
   	}
   	catch (std::exception &e) {
-    std::cout << "error : " << e.what() << std::endl;
+    
+		std::cout << "error : " << e.what() << std::endl;
   	}
 
-	john.signForm(shrub);
-	john.executeForm(shrub);
+	pedri.signForm(shrub);
+	pedri.executeForm(shrub);
 
-	john.signForm(robot);
-	john.executeForm(robot);
+	pedri.signForm(robot);
+	pedri.executeForm(robot);
 
-	john.signForm(pres);
-	john.executeForm(pres);
+	pedri.signForm(pres);
+	pedri.executeForm(pres);
 
 	return (0);
 }
