@@ -3,16 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fjimenez <fjimenez@student.42madrid.com    +#+  +:+       +#+         #
+#    By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/28 18:03:18 by fjimenez          #+#    #+#              #
-#    Updated: 2020/09/28 18:03:37 by fjimenez         ###   ########.fr        #
+#    Updated: 2020/11/19 09:25:17 by fjimenez         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = whatever
 
-SRC = whatever.cpp
+SRC = whatever.cpp main.cpp
 
 OBJS = ${SRC:.cpp=.o}
 
