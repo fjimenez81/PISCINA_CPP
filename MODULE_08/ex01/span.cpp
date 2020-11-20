@@ -6,7 +6,7 @@
 /*   By: fjimenez <fjimenez@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/28 20:05:17 by fjimenez          #+#    #+#             */
-/*   Updated: 2020/11/17 16:44:20 by fjimenez         ###   ########.fr       */
+/*   Updated: 2020/11/20 12:27:22 by fjimenez         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,23 @@ void Span::addNumber(int number)
 
 int Span::shortestSpan()
 {
+	std::vector<int>::iterator it, it2;
+	int	min, dif;
+
 	if (_cont.empty() || _cont.size() == 1)
 		throw std::runtime_error("Container is empty or have only one element");
-	std::vector<int> copy = _cont;
-  	std::sort(copy.begin(), copy.end());
-  	return (copy[1] - copy[0]);
+	it = this->_cont.begin();
+	it2 = ++this->_cont.begin();
+	min = abs(*it - *it2);
+	while (it2 != this->_cont.end())
+	{
+		dif = abs(*it - *it2);
+		if (dif < min)
+			min = dif;
+		it++;
+		it2++;
+	}
+	return (min);
 }
 
 int Span::longestSpan()
